@@ -6,6 +6,7 @@ import scipy.stats as stats
 
 chat_id = 390760498 
 
-def solution(x: np.array, y: np.array) -> bool: 
 
+def solution(x, y) -> bool: 
+    
     return stats.ttest_ind(x, y)[1] < 0.03 
